@@ -1,3 +1,3 @@
-# nue Instagram profile grid
+# nue Instagram grid
 
-Single-file art-direction page for the @talkwithnue Instagram profile grid (v3).
+Art-direction versions (V3–V7) of the @talkwithnue profile grid. Single self-contained page; hosted on Vercel.
