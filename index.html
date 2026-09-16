@@ -1,6 +1,10 @@
-<!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>nue · grid versions</title>
-<link rel="icon" href="assets/nue-logo-gradient.png">
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+<title>nue · grid versions</title>
 <style>
 :root{--void:#0B0910;--elev:#131019;--line:#2A2434;--soft:#F9F9F9;--md:#9C97A8;--teal:#31BFBF;--lav:#C6B6F2}
 *{box-sizing:border-box;margin:0}
@@ -21,25 +25,19 @@ iframe.on{display:block}
 <header>
 <img src="assets/nue-logo-gradient.png" alt="nue">
 <nav class="tabs">
-<button class="tab" data-v="v3">V3<small>editorial dusk</small></button>
-<button class="tab" data-v="v4">V4<small>more sky photography</small></button>
-<button class="tab" data-v="v5">V5<small>quiet luxury type</small></button>
-<button class="tab" data-v="v6">V6<small>dusk grid</small></button>
 <button class="tab" data-v="v7">V7<small>minimal editorial</small></button>
-<button class="tab" data-v="v8">V8<small>vitality still-life</small></button>
-<button class="tab" data-v="v9">V9<small>best of 3 &middot; 6 &middot; 7</small></button>
-<button class="tab on" data-v="v10">V10<small>warm quiet</small></button>
+<button class="tab" data-v="v9">V9<small>best of 3 · 6 · 7</small></button>
+<button class="tab" data-v="v10">V10<small>warm quiet</small></button>
+<button class="tab" data-v="v11">V11<small>warm quiet · app still</small></button>
+<button class="tab on" data-v="v12">V12<small>warm quiet · copy</small></button>
 </nav>
 </header>
 <main>
-<iframe data-v="v3" title="Grid v3" loading="lazy" src="v3.html"></iframe>
-<iframe data-v="v4" title="Grid v4" loading="lazy" src="v4.html"></iframe>
-<iframe data-v="v5" title="Grid v5" loading="lazy" src="v5.html"></iframe>
-<iframe data-v="v6" title="Grid v6" loading="lazy" src="v6.html"></iframe>
 <iframe data-v="v7" title="Grid v7" loading="lazy" src="v7.html"></iframe>
-<iframe data-v="v8" title="Grid v8" loading="lazy" src="v8.html"></iframe>
 <iframe data-v="v9" title="Grid v9" loading="lazy" src="v9.html"></iframe>
-<iframe data-v="v10" title="Grid v10" loading="lazy" src="v10.html" class="on"></iframe>
+<iframe data-v="v10" title="Grid v10" loading="lazy" src="v10.html"></iframe>
+<iframe data-v="v11" title="Grid v11" loading="lazy" src="v11.html"></iframe>
+<iframe data-v="v12" title="Grid v12" loading="lazy" class="on" src="v12.html"></iframe>
 </main>
 <script>
 const key='nue-grid-version-tab';
@@ -47,4 +45,5 @@ function pick(v){document.querySelectorAll('.tab').forEach(t=>t.classList.toggle
 document.querySelectorAll('.tab').forEach(t=>t.addEventListener('click',()=>pick(t.dataset.v)));
 try{const s=localStorage.getItem(key);if(s&&document.querySelector('.tab[data-v="'+s+'"]'))pick(s)}catch(e){}
 </script>
+
 </body></html>
