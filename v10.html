@@ -1,0 +1,113 @@
+
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Warm quiet grid · @talkwithnue</title>
+<link rel="stylesheet" href="styles.css">
+<script src="image-slot.js"></script>
+<style>body{display:flex;justify-content:center;padding:20px}
+.wrap{width:848px}
+.feed{background:var(--elev);border:1px solid var(--line);border-radius:20px;padding:22px}
+.fhead{display:flex;gap:14px;align-items:center;padding:4px 4px 20px}
+.av{width:52px;height:52px;border-radius:50%;background:var(--void);border:1px solid var(--line2);display:flex;align-items:center;justify-content:center;flex:none}
+.av img{width:34px;display:block}
+.fhead b{font-family:var(--disp);font-weight:600;color:var(--soft);font-size:14px;display:block}
+.fhead span{font-size:11.5px;color:var(--md)}
+.g{display:grid;grid-template-columns:repeat(3,auto);gap:6px;justify-content:center}
+.cell{--s:.642;width:calc(405px*var(--s));height:calc(506px*var(--s));position:relative;flex:none}
+.cell>.tile{position:absolute;top:0;left:0;transform:scale(var(--s));transform-origin:0 0}
+
+/* tile */
+.tile{width:405px;height:506px;position:relative;overflow:hidden;display:flex;flex-direction:column;background:#EDE7DD;color:#2B2633;border-radius:8px;flex:none}
+.tile .im{position:absolute;inset:0}
+.tile .im image-slot{width:100%;height:100%;filter:saturate(.82) contrast(.96)}
+.veil{position:absolute;inset:0;pointer-events:none}
+/* shadow-textured text tiles: warm tint + leaf shadow photo multiplied on top */
+.tile .tex{position:absolute;inset:-6%;pointer-events:none;mix-blend-mode:multiply;opacity:.55;transform:scale(1.12) rotate(-8deg)}
+.tile .tex image-slot{width:100%;height:100%;filter:grayscale(1) contrast(1.05) brightness(1.02)}
+.tile.taupe{background:#8C8378;color:#F5F1EA}
+.tile.taupe .tex{opacity:.42;mix-blend-mode:multiply}
+.tile.cream{background:#EEE6D8;color:#2B2633}
+.tile.cream .tex{opacity:.38}
+.tile.slate{background:#4D4A4E;color:#F5F1EA}
+.tile.slate .tex{opacity:.5}
+
+.tp{position:relative;z-index:2;flex:1;display:flex;flex-direction:column;padding:44px 40px 36px}
+.tp.ctr{align-items:center;text-align:center}
+.tp.onph{color:#F9F7F3}
+.kick{font-family:var(--text);font-weight:400;font-size:13px;letter-spacing:.02em;color:rgba(245,241,234,.9)}
+.cream .kick{color:#6E6880}
+.big{font-family:var(--disp);font-weight:300;font-size:44px;line-height:1.1;letter-spacing:-.02em;text-wrap:balance}
+.big b{font-weight:600;color:var(--lav)}
+.cream .big b{color:#9B86D9}
+.mid{font-family:var(--disp);font-weight:300;font-size:38px;line-height:1.14;letter-spacing:-.02em;text-wrap:balance}
+.mid b{font-weight:600;color:var(--lav)}
+.dash{width:30px;height:1.5px;background:rgba(245,241,234,.8);margin:22px 0 0;flex:none}
+.tp.ctr .dash{align-self:center}
+.cream .dash{background:#2B2633;opacity:.6}
+.cap{font-family:var(--text);font-weight:400;font-size:15px;line-height:1.6;letter-spacing:.06em;color:rgba(249,247,243,.95)}
+.mk{margin-top:auto;display:flex;justify-content:center}
+.mk.l{justify-content:flex-start}
+.mk img{height:28px;display:block}
+.sp{flex:1}
+</style></head>
+<body>
+<div class="wrap">
+<div class="feed">
+  <div class="fhead"><div class="av"><img src="assets/nue-logo-gradient.png" alt="nue"></div><div><b>@talkwithnue</b><span>daily mental fitness &middot; notice. understand. evolve.</span></div></div>
+  <div class="g">
+
+    <!-- 1 · taupe text tile, geometric/leaf shadow -->
+    <div class="cell"><div class="tile taupe">
+      <div class="tex"><image-slot id="w01-shadow" src="https://images.unsplash.com/photo-1743208552227-0ae5a4fd1451?fm=jpg&q=80&w=1600&fit=max" credit="Photo by Rosemary Media on Unsplash" credit-href="https://unsplash.com/@rosemarymedia" shape="rect" placeholder="leaf shadows on a wall"></image-slot></div>
+      <div class="tp ctr"><div class="sp"></div><div class="kick">live with intention</div><div style="height:10px"></div><div class="big"><b>mental fitness</b><br>practices you<br>should try today</div><div class="sp"></div><div class="mk"><img src="assets/nue-logo-gradient.png" alt="nue"></div></div>
+    </div></div>
+
+    <!-- 2 · photo: blueberries -->
+    <div class="cell"><div class="tile">
+      <div class="im"><image-slot id="w02-berries" src="https://images.unsplash.com/photo-1521388825798-fec41108def2?fm=jpg&q=80&w=1600&fit=max" credit="Photo by Mike Kenneally on Unsplash" credit-href="https://unsplash.com/@asthetik" shape="rect" placeholder="blueberries in a spoon, dark surface"></image-slot></div>
+    </div></div>
+
+    <!-- 3 · photo: crescent moon + line -->
+    <div class="cell"><div class="tile">
+      <div class="im"><image-slot id="w03-moon" src="https://images.unsplash.com/photo-1652168634221-d19262627ee0?fm=jpg&q=80&w=1600&fit=max" credit="Photo by Ch Photography on Unsplash" credit-href="https://unsplash.com/@chphotography" shape="rect" placeholder="crescent moon in a pink dusk sky"></image-slot></div>
+      <div class="veil" style="background:linear-gradient(180deg,rgba(43,38,51,0) 40%,rgba(43,38,51,.28) 100%)"></div>
+      <div class="tp onph"><div class="sp"></div><div class="mid">start with<br>what feels<br><b>real</b></div><div class="dash"></div><div class="sp" style="flex:0 0 26px"></div><div class="mk l"><img src="assets/nue-logo-gradient.png" alt="nue"></div></div>
+    </div></div>
+
+    <!-- 4 · photo: sunset silhouette -->
+    <div class="cell"><div class="tile">
+      <div class="im"><image-slot id="w04-sunset" src="https://images.unsplash.com/photo-1744943776101-0972d84ed6f8?fm=jpg&q=80&w=1600&fit=max" credit="Photo by Zoshua Colah on Unsplash" credit-href="https://unsplash.com/@zoshuacolah" shape="rect" placeholder="figure watching the sun set over water"></image-slot></div>
+    </div></div>
+
+    <!-- 5 · cream text tile with leaf shadow -->
+    <div class="cell"><div class="tile cream">
+      <div class="tex" style="transform:scale(1.15) rotate(12deg)"><image-slot id="w05-shadow" src="https://images.unsplash.com/photo-1743208552227-0ae5a4fd1451?fm=jpg&q=80&w=1600&fit=max" credit="Photo by Rosemary Media on Unsplash" credit-href="https://unsplash.com/@rosemarymedia" shape="rect" placeholder="leaf shadows on a wall"></image-slot></div>
+      <div class="tp ctr"><div class="sp"></div><div class="big" style="font-size:50px">small<br><b>daily reps</b></div><div class="dash"></div><div class="sp"></div><div class="mk"><img src="assets/nue-logo-gradient.png" alt="nue"></div></div>
+    </div></div>
+
+    <!-- 6 · photo: notebook and pen -->
+    <div class="cell"><div class="tile">
+      <div class="im"><image-slot id="w06-notebook" src="https://images.unsplash.com/photo-1735530452856-350574b4917f?fm=jpg&q=80&w=1600&fit=max" credit="Photo by Sixteen Miles Out on Unsplash" credit-href="https://unsplash.com/@sixteenmilesout" shape="rect" placeholder="open notebook with a pen, soft shadows"></image-slot></div>
+    </div></div>
+
+    <!-- 7 · slate text tile, left aligned -->
+    <div class="cell"><div class="tile slate">
+      <div class="tex" style="transform:scale(1.2) rotate(-16deg)"><image-slot id="w07-shadow" src="https://images.unsplash.com/photo-1743208552227-0ae5a4fd1451?fm=jpg&q=80&w=1600&fit=max" credit="Photo by Rosemary Media on Unsplash" credit-href="https://unsplash.com/@rosemarymedia" shape="rect" placeholder="leaf shadows on a wall"></image-slot></div>
+      <div class="tp"><div class="sp"></div><div class="big" style="font-size:46px">less noise,<br><b>more clarity</b></div><div class="dash"></div><div class="sp"></div><div class="mk l"><img src="assets/nue-logo-gradient.png" alt="nue"></div></div>
+    </div></div>
+
+    <!-- 8 · photo: canoe (project photo) -->
+    <div class="cell"><div class="tile">
+      <div class="im"><image-slot id="w08-canoe" src="photos/p1011.jpg" shape="rect" placeholder="alone on calm water"></image-slot></div>
+    </div></div>
+
+    <!-- 9 · photo: dusk mountains + mantra -->
+    <div class="cell"><div class="tile">
+      <div class="im"><image-slot id="w09-mountains" src="https://images.unsplash.com/photo-1747365311500-7eb07816f0fe?fm=jpg&q=80&w=1600&fit=max" credit="Photo by Ahmet Yüksek on Unsplash" credit-href="https://unsplash.com/@ahmetyuksek" shape="rect" placeholder="layered mountains in dusky haze"></image-slot></div>
+      <div class="veil" style="background:linear-gradient(180deg,rgba(120,96,170,.34) 0%,rgba(70,58,110,.30) 50%,rgba(31,26,48,.62) 100%);mix-blend-mode:multiply"></div><div class="veil" style="background:linear-gradient(180deg,rgba(198,182,242,.10),rgba(43,38,51,.18))"></div>
+      <div class="tp onph ctr"><div class="sp"></div><div class="cap">notice &nbsp;&bull;&nbsp; understand &nbsp;&bull;&nbsp; evolve</div><div class="dash" style="margin-top:18px"></div><div class="sp"></div><div class="mk"><img src="assets/nue-logo-gradient.png" alt="nue"></div></div>
+    </div></div>
+
+  </div>
+</div>
+</div>
+</body></html>

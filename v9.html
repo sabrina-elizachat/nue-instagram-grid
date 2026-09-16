@@ -1,0 +1,65 @@
+
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Best-of grid · @talkwithnue</title>
+<link rel="stylesheet" href="styles.css">
+<script src="image-slot.js"></script>
+<style>body{display:flex;justify-content:center;padding:20px}
+.wrap{width:848px}
+.feed{background:var(--elev);border:1px solid var(--line);border-radius:20px;padding:22px}
+.fhead{display:flex;gap:14px;align-items:center;padding:4px 4px 20px}
+.av{width:52px;height:52px;border-radius:50%;background:var(--void);border:1px solid var(--line2);display:flex;align-items:center;justify-content:center;flex:none}
+.av img{width:34px;display:block}
+.fhead b{font-family:var(--disp);font-weight:600;color:var(--soft);font-size:14px;display:block}
+.fhead span{font-size:11.5px;color:var(--md)}
+.g{display:grid;grid-template-columns:repeat(3,auto);gap:6px;justify-content:center}
+.cell{--s:.642;width:calc(405px*var(--s));height:calc(506px*var(--s));position:relative;flex:none}
+.cell>.tile{position:absolute;top:0;left:0;transform:scale(var(--s));transform-origin:0 0}
+.tile{width:405px;height:506px;position:relative;overflow:hidden;display:flex;flex-direction:column;background:var(--paper);color:#17131F;border:1px solid var(--line);border-radius:12px;flex:none}
+.tile.dk{background:var(--void);color:var(--soft)}
+.tile .im{position:absolute;inset:0}
+.tile .im image-slot{width:100%;height:100%;filter:saturate(.8) contrast(.97) brightness(.95)}
+.veil{position:absolute;inset:0;pointer-events:none}
+.tp{position:relative;z-index:2;flex:1;display:flex;flex-direction:column;padding:44px 40px 36px}
+.tp.ctr{align-items:center;text-align:center}
+.tp.onph{color:#F9F9F9}
+.kick{font-family:var(--text);font-weight:500;font-size:11px;letter-spacing:.3em;color:var(--ml)}
+.dk .kick{color:var(--md)}.onph .kick{color:rgba(249,249,249,.78)}
+.dash{width:34px;height:2px;background:var(--lav);margin-bottom:18px}
+.big{font-family:var(--disp);font-weight:500;font-size:54px;line-height:1.08;letter-spacing:-.02em;text-wrap:balance}
+.big em{font-family:var(--text);font-style:italic;font-weight:600;font-size:.96em;color:var(--lavdeep)}
+.dk .big em,.onph .big em{color:var(--lav)}
+.mid{font-family:var(--disp);font-weight:500;font-size:32px;line-height:1.22;letter-spacing:-.015em;text-wrap:balance}
+.mid em{font-family:var(--text);font-style:italic;font-weight:600;color:var(--lavdeep)}
+.dk .mid em,.onph .mid em{color:var(--lav)}
+.cap{font-family:var(--text);font-weight:400;font-size:12.5px;line-height:1.7;letter-spacing:.05em;color:var(--ml)}
+.dk .cap{color:var(--md)}.onph .cap{color:rgba(228,225,234,.92)}
+.mk{margin-top:auto;display:flex;justify-content:center}
+.mk.l{justify-content:flex-start}
+.mk img{height:15px;display:block;opacity:.92}
+.playm{width:44px;height:44px;border-radius:50%;border:1px solid rgba(249,249,249,.78);display:flex;align-items:center;justify-content:center;align-self:flex-end}
+.playm span{width:0;height:0;border-left:11px solid rgba(249,249,249,.95);border-top:7px solid transparent;border-bottom:7px solid transparent;margin-left:3px}
+.qm{font-family:var(--disp);font-weight:700;font-size:64px;line-height:.6;color:var(--lav)}
+.cta{font-family:var(--text);font-weight:600;font-size:11.5px;letter-spacing:.22em;color:var(--teal);border-bottom:1px solid var(--teal);padding-bottom:4px;align-self:flex-start}
+.s8{height:8px}.s14{height:14px}.s20{height:20px}
+</style></head>
+<body>
+<div class="wrap">
+<div class="feed">
+  <div class="fhead"><div class="av"><img src="assets/nue-logo-gradient.png" alt="nue"></div><div><b>@talkwithnue</b><span>daily mental fitness &middot; notice. understand. evolve.</span></div></div>
+  <div class="g">
+    <div class="cell"><div class="tile"><div class="tp ctr"><div class="kick">a daily practice</div><div style="margin-top:auto"></div><div class="big">notice<br><em>everything</em></div><div style="margin-top:auto"></div><div class="mk"><img src="assets/nue-logo-gradient.png" alt="nue"></div></div></div></div>
+    <div class="cell"><div class="tile"><div class="im"><image-slot id="b02-dusk" src="https://images.unsplash.com/photo-1621096742997-d4efa73a2235?fm=jpg&q=80&w=1600&fit=max" credit="Photo by naraa .in.ub on Unsplash" credit-href="https://unsplash.com/@naranbayar_1" shape="rect" placeholder="muted dusk over trees"></image-slot></div></div></div>
+    <div class="cell"><div class="tile dk"><div class="tp ctr"><div class="kick" style="text-transform:lowercase">from the podcast</div><div style="margin-top:auto"></div><div class="qm">&ldquo;</div><div class="s14"></div><div class="mid" style="font-size:40px">rest is a <em>skill</em></div><div style="margin-top:auto"></div><div class="mk"><img src="assets/nue-logo-gradient.png" alt="nue"></div></div></div></div>
+    <div class="cell"><div class="tile"><div class="im"><image-slot id="b04-reel" src="photos/p1005.jpg" shape="rect" placeholder="looking out over water at dusk"></image-slot></div><div class="veil" style="background:linear-gradient(180deg,rgba(11,9,16,.2),rgba(11,9,16,.08) 40%,rgba(11,9,16,.6) 100%)"></div><div class="tp onph" style="pointer-events:none"><div class="playm"><span></span></div><div style="margin-top:auto"></div><div class="dash"></div><div class="mid" style="font-size:28px">your baseline is not your <em>mood</em></div></div></div></div>
+    <div class="cell"><div class="tile"><div class="tp"><div class="dash" style="background:var(--lavdeep)"></div><div class="kick" style="text-transform:lowercase">connection to self</div><div style="margin-top:auto"></div><div class="big" style="font-size:44px">the label is not the <em>limit</em></div><div class="s14"></div><div class="cap">a trait is an average. not a ceiling.</div><div style="margin-top:auto"></div><div class="mk l"><img src="assets/nue-logo-gradient.png" alt="nue"></div></div></div></div>
+    <div class="cell"><div class="tile"><div class="im"><image-slot id="b06-lake" src="photos/p883.jpg" shape="rect" placeholder="figure at blue-hour lake"></image-slot></div></div></div>
+    <div class="cell"><div class="tile"><div class="im"><image-slot id="b07-shadows" src="https://images.unsplash.com/photo-1743208552227-0ae5a4fd1451?fm=jpg&q=80&w=1600&fit=max" credit="Photo by Rosemary Media on Unsplash" credit-href="https://unsplash.com/@rosemarymedia" shape="rect" placeholder="leaf shadows on a white wall"></image-slot></div><div class="veil" style="background:linear-gradient(180deg,rgba(11,9,16,.5),rgba(11,9,16,.62) 100%)"></div><div class="tp onph"><div class="big" style="font-size:52px;line-height:1.06">seen<br>daily<br>is not<br><em>known</em><br>deeply</div><div style="margin-top:auto"></div><div class="kick" style="text-transform:lowercase">connection to others</div></div></div></div>
+    <div class="cell"><div class="tile"><div class="im"><image-slot id="b08-canoe" src="photos/p1011.jpg" shape="rect" placeholder="alone on calm water"></image-slot></div><div class="veil" style="background:linear-gradient(180deg,rgba(11,9,16,.06) 0%,rgba(11,9,16,.14) 60%,rgba(11,9,16,.58) 100%)"></div><div class="tp onph ctr" style="pointer-events:none"><div style="margin-top:auto"></div><div class="cap" style="letter-spacing:.16em">notice &middot; understand &middot; evolve</div></div></div></div>
+    <div class="cell"><div class="tile" style="background:linear-gradient(165deg,#F5F3F7 0%,#EFEAF3 60%,#E9E2EE 100%)"><div class="tp ctr"><div class="kick" style="color:var(--tealdeep);letter-spacing:.3em">CHECK-IN</div><div style="margin-top:auto"></div><div class="mid" style="font-size:34px">what has been taking more than it <em>gives</em>?</div><div class="s14"></div><div class="cap">start there.</div><div style="margin-top:auto"></div><div class="mk"><img src="assets/nue-logo-gradient.png" alt="nue"></div></div></div></div>
+    <div class="cell"><div class="tile"><div class="im"><image-slot id="b10-reel2" src="https://images.unsplash.com/photo-1697060739671-586c21fa5e30?fm=jpg&q=80&w=1600&fit=max" credit="Photo by Alireza Skndari on Unsplash" credit-href="https://unsplash.com/@alireza_skndari" shape="rect" placeholder="stretching in window light"></image-slot></div><div class="veil" style="background:linear-gradient(180deg,rgba(11,9,16,.18),rgba(11,9,16,.08) 40%,rgba(11,9,16,.58) 100%)"></div><div class="tp onph" style="pointer-events:none"><div class="playm"><span></span></div><div style="margin-top:auto"></div><div class="dash"></div><div class="mid" style="font-size:28px">movement is a <em>mental</em> rep</div></div></div></div>
+    <div class="cell"><div class="tile dk"><div class="tp"><div class="dash"></div><div class="kick" style="text-transform:lowercase">the baseline, explained</div><div style="margin-top:auto"></div><div class="big" style="font-size:46px">start where you <em>are</em></div><div class="s20"></div><div class="cta">TAKE THE 20-SECOND QUIZ</div><div style="margin-top:auto"></div><div class="mk l"><img src="assets/nue-logo-gradient.png" alt="nue"></div></div></div></div>
+    <div class="cell"><div class="tile"><div class="im"><image-slot id="b12-berries" src="https://images.unsplash.com/photo-1567805792275-f06dac23b338?fm=jpg&q=80&w=1600&fit=max" credit="Photo by Yulia Khlebnikova on Unsplash" credit-href="https://unsplash.com/@khlebnikovayulia" shape="rect" placeholder="blueberries in a grey ceramic bowl"></image-slot></div><div class="veil" style="background:linear-gradient(180deg,rgba(11,9,16,.12),rgba(11,9,16,.5) 100%)"></div><div class="tp onph" style="pointer-events:none"><div style="margin-top:auto"></div><div class="cap" style="text-align:center">fuel is mental fitness too</div></div></div></div>
+  </div>
+</div>
+</div>
+</body></html>
